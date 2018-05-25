@@ -1,38 +1,38 @@
-require 'xdite'
+require 'kp'
 require 'thor'
-require 'xdite/version'
+require 'kp/version'
 
-module Xdite
+module Kp
   class Cli < Thor
     default_task :says
     desc 'says [NUMBER]', 'Prints famous quotes. (Default task)'
     def says number = 1
-      puts Xdite.says(number)
+      puts Kp.says(number)
     end
 
     desc 'sentence [NUMBER]', 'Prints famous quotes inline'
     def sentence number = 1
-      puts Xdite.sentence(number)
+      puts Kp.sentence(number)
     end
 
     desc 'paragraph [NUMBER] [SENTENCE_NUMBER]', 'Prints paragraphs'
     def paragraph number = 1, per_paragraph = 5
-      puts Xdite.paragraph(number, per_paragraph)
+      puts Kp.paragraph(number, per_paragraph)
     end
 
-    desc 'apologize', 'Ask xdite to apologize'
+    desc 'apologize', 'Ask kp to apologize'
     def apologize
-      puts Xdite.apologize
+      puts Kp.apologize
     end
 
-    desc 'debate', 'Ask xdite to debate'
+    desc 'debate', 'Ask kp to debate'
     def debate
-      puts Xdite.debate
+      puts Kp.debate
     end
 
     desc 'version', 'Prints version'
     def version
-      puts Xdite::VERSION
+      puts Kp::VERSION
     end
 
     no_tasks do

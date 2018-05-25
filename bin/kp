@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+require 'kp/cli'
+Kp::Cli.start(ARGV)

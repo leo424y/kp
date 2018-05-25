@@ -1,5 +1,5 @@
 # encoding: utf-8
-module Xdite
+module Kp
   class << self
     # per line
     def says n = 1
@@ -18,7 +18,7 @@ module Xdite
     end
 
     def apologize
-      '別人變造我的講法還甚至發明我沒講過的話。那我到底要對這些內容去道歉什麼？'
+      '讓大家聽了不悅，對此道歉'
     end
 
     def debate
@@ -28,7 +28,7 @@ module Xdite
     end
 
     def quotes
-      @quotes ||= File.readlines(File.expand_path('../xdite/quotes.txt', __FILE__)).map(&:strip)
+      @quotes ||= File.readlines(File.expand_path('../kp/quotes.txt', __FILE__)).map(&:strip)
     end
   end
 end
