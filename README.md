@@ -23,10 +23,3 @@ Commands:
   kp sentence [NUMBER]                     # Prints famous quotes inline
   kp version                               # Prints version
 ```
-
-References
-==========
-
-- [I love kp](http://kp-joke.tumblr.com/)
-- [大神語錄](http://slot.miario.com/machines/83899)
-- [吵架王](http://slot.miario.com/machines/83900)
