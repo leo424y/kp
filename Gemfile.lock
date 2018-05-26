@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kp (1.0.1)
+    kp (1.0.2)
       thor
 
 GEM
@@ -33,4 +33,4 @@ DEPENDENCIES
   rspec
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
